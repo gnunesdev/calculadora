@@ -1,16 +1,15 @@
 import React, { useContext, useState } from "react";
-import { CalculatorContext } from "./../../context/CalculatorContext";
 
 import { Container } from "./styles";
 
+import Visor from './../Visor';
 import ButtonValue from "./../ButtonValue";
 
 const Calculator: React.FC = () => {
-  const { visor } = useContext(CalculatorContext);
 
   return (
     <Container>
-      <div className="calculator__visor">{visor}</div>
+      <Visor />
       <div className="calculator__keyboard">
         <div className="calculator__values">
           <ButtonValue>9</ButtonValue>
