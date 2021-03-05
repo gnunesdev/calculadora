@@ -1,16 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import { Container } from "./styles";
 
-interface Props {
-  toggleTheme: () => void;
-}
-
-const Header: React.FC<Props> = ({ toggleTheme }) => {
-
+const Header: React.FC = () => {
   return (
     <Container>
-      Calculadora do Guizão
+      <h1>Calculadora</h1>
     </Container>
   );
 };

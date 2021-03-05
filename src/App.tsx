@@ -23,8 +23,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <div className="App">
           <GlobalStyle />
-          <Header toggleTheme={toggleTheme} />
-          <Calculator />
+          <Header />
+          <Calculator toggleTheme={toggleTheme} />
         </div>
       </ThemeProvider>
     </CalculatorProvider>
